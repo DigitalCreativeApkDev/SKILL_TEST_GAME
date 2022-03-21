@@ -232,7 +232,7 @@ def main():
     print("Welcome to 'Skill Test Game' by 'DigitalCreativeApkDev'.")
     print("In this game, you will answer questions from skill tests to earn skill badges ")
     print("like in LinkedIn Skill Assessments (https://www.linkedin.com/skill-assessments/hub/quizzes/).")
-    print("To earn a skill badge, you will need to answer at least 8s0% of the questions in the skill test correctly.")
+    print("To earn a skill badge, you will need to answer at least 80% of the questions in the skill test correctly.")
 
     # Initialising function level variables to be used in the game.
     # 1. Available skill tests.
@@ -576,6 +576,10 @@ def main():
                     answer = ""
 
             final_score: mpf = mpf(score) / mpf("15") * mpf("100")
+
+            # Clearing up the command line window
+            clear()
+
             if final_score >= mpf("80"):
                 print("Congratulations! You score " + str(final_score) + "% in " + str(selected_skill_test.name) +
                       " Skill Test!\nYou earn a skill badge!")
@@ -584,9 +588,6 @@ def main():
 
                 selected_skill_test.skill_badge_earned = True
                 player_data.lock_skill_test(selected_skill_test)
-
-                # Clearing up the command line window
-                clear()
 
                 print("Enter 'Y' for yes.")
                 print("Enter anything else for no.")
