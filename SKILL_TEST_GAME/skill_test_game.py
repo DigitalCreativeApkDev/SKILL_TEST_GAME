@@ -5,7 +5,7 @@ Author: DigitalCreativeApkDev
 This game is inspired by LinkedIn Skill Assessments (https://www.linkedin.com/skill-assessments/hub/quizzes/).
 """
 
-# Game version: pre-release
+# Game version: 1
 
 
 # Importing necessary libraries
