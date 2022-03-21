@@ -1,0 +1,5 @@
+Pre-release Version (release date: 21 March 2022):
+- Python skill test available with 30 possible questions.
+
+Version 1 (release date: TBA):
+- More skill tests (e.g., Java, C++, C#, Microsoft Word, Microsoft Excel, etc) will be available.
